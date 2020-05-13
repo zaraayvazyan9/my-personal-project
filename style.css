@@ -49,7 +49,7 @@
   position: absolute;
   top: 43%;
   left: 33%;
-  box-shadow: 20px 20px 50px 15px grey;
+  box-shadow: 2px 2px 60px 2px grey;
 }
 
 .column2 {
@@ -75,11 +75,11 @@ footer {
   font-size: 12px;
   padding: 15px 0;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   color: whitesmoke;
 }
-.column p {
+  .column p {
     font-size: 20px;
     
 }
