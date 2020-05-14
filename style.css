@@ -39,8 +39,8 @@
   }
   
   .topnav a:hover {
-    background-color: #f9ebf2;
-    color: black;
+    background-color: #9e8990;
+    color: rgb(126, 71, 100);
   }
   
   .active {
@@ -115,9 +115,11 @@ h4 {
 h6 {
   font-weight: lighter;
   font-style: italic;
+  font-size: 12px;
   margin: 2px;
   color:#707070
 }
+
 .listing {
   font-style: italic;
   margin:5px 20px 30px 20px;
@@ -137,6 +139,35 @@ h6 {
   height: 40px;
   margin: 2px 9px 2px 9px;
 }
+
+@keyframes pulse {
+  0% {
+    transform:  scale(1) ;
+  }
+  50% {
+    transform: scale(1.5) rotate(20deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icons:hover img{
+  /* transform: scale(1.5);
+  transition: transform 500ms linear; */
+  /* background-color: red;
+  transition: all 500ms linear; */
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+}
+.icons img {
+  flex-grow: 1;
+}
+
+
+
 
 footer {
   display: block;
