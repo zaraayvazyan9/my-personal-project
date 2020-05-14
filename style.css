@@ -2,10 +2,13 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-
+  body {
+  position: relative;
+  }
   .wrapper {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
   }
 
   nav {
@@ -32,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
+  height: 870px;
 }
 .column1 {
   background-color: #ab677d21;
@@ -66,18 +69,13 @@
   }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   background-color: #bf6e948a;
+  color: whitesmoke;
   text-align: center;
   font-style: italic;
   font-size: 12px;
-  padding: 15px 0;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  color: whitesmoke;
+  padding: 20px;
 }
   .column p {
     font-size: 20px;
@@ -101,13 +99,15 @@ h6 {
   font-style: italic;
   margin:5px 20px 0 20px;
   color:#707070;
-  height: 200px;
-  min-height: 200px;
+  height: 250px;
+  min-height: 250px;
 }
 .icons{
-  display: inline-block;
+  display: block;
   justify-content: space-between;
   align-items: center;
+  height: 120px;
+  min-height: 120px;
 }
 .icons img {
   height: 40px;
@@ -115,20 +115,20 @@ h6 {
 
 @media (min-width : 768px) {
   nav ul li {
-  font-size: 16px;
-    }
-    .column1 {
-      height: 300px;
-      min-block-size: 300px;
-    }
-    .column2 {
-      height: 200px;
-      min-block-size: 200px;
-    }
-    .column1 img {
-    width: 250px;
+    font-size: 16px;
+  }
+  .column1 {
+    height: 300px;
+    min-block-size: 300px;
+  }
+  .column2 {
+    height: 200px;
+    min-block-size: 200px;
+  }
+  .column1 img {width: 250px;
     height: 250px;
     top: 34%;
     left: 41%;
     }
+
   }
