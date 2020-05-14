@@ -10,8 +10,46 @@
     max-width: 1024px;
     margin: 0 auto;
   }
+  .topnav {
+    overflow: hidden;
+    background-color: #bf6e948a;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    height: 45px;
+    min-height: 45px;
+  }
+  
+  .topnav a.icon {
+    background: #bf6e948a;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #f9ebf2;
+    color: black;
+  }
+  
+  .active {
+    background-color: #bf6e948a;
+    color: white;
+  }
 
-  nav {
+
+  /* nav {
     background-color: #bf6e948a;
     padding: 10px;
   }
@@ -26,9 +64,9 @@
   nav ul li {
     align-items: right;
     padding: 0 0 0 20px;
-    font-size: 16px;
-    color: whitesmoke;
-  }
+    font-size: 20px;
+    color: white;
+  } */
 
 .container {
   display: flex;
@@ -37,6 +75,11 @@
   position: relative;
 }
 .column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  position: relative;
   background-color: #ab677d21;
   width: 100%;
   height: 200px;
@@ -53,33 +96,14 @@
   left: 33%;
   box-shadow: 2px 2px 60px 2px grey;
 }
-
+ 
+  
 .column2 {
-  width: 100%;
-  height: 200px;
-
-}
-.column1, .column2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  position: relative;
+    height: 200px;
+    padding-top: 10px;
+    margin-right: 100px;
   }
 
-footer {
-  display: block;
-  background-color: #bf6e948a;
-  color: whitesmoke;
-  text-align: center;
-  font-style: italic;
-  font-size: 12px;
-  padding: 20px;
-}
-  .column p {
-    font-size: 20px;
-    
-}
 h2 {
   margin-top: 70px;
   margin-bottom: 3px;
@@ -96,10 +120,11 @@ h6 {
 }
 .listing {
   font-style: italic;
-  margin:5px 20px 0 20px;
+  margin:5px 20px 30px 20px;
   color:#707070;
   height: 250px;
   min-height: 250px;
+  line-height: 1.6;
 }
 .icons{
   display: block;
@@ -110,24 +135,55 @@ h6 {
 }
 .icons img {
   height: 40px;
+  margin: 2px 9px 2px 9px;
+}
+
+footer {
+  display: block;
+  background-color: #bf6e948a;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  padding: 20px;
 }
 
 @media (min-width : 768px) {
   nav ul li {
     font-size: 16px;
   }
+h2 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h6 {
+    font-size: 14px;
+  }
+
   .column1 {
     height: 300px;
     min-block-size: 300px;
   }
-  .column2 {
-    height: 200px;
-    min-block-size: 200px;
-  }
+
   .column1 img {width: 250px;
     height: 250px;
     top: 34%;
     left: 41%;
     }
 
+    .column2 {
+      height: 250px;
+      min-block-size: 250px;
+      margin-right: 800px;
+    }
+
+    .listing {
+      line-height: 2;
+    }
   }
+
+
+
+  

@@ -6,9 +6,35 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-      <nav>
+    <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="https://zaraayvazyan9.github.io/my-personal-project/" class="active">Home</a>
+    <div id="myLinks">
+      <a href="about.html">Introduction</a>
+      <a href="#contact">Education</a>
+      <a href="#about">Skills</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+      <!-- <nav>
           <div class="wrapper">
               <ul>
                   <li><a href="./about.html">Introduction</a></li>
@@ -17,7 +43,7 @@
                   <li>Hobbies</li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <div class="container">
             <div class="column1">
                 <img src="https://github.com/zaraayvazyan9.png" alt="Profile Picture" />
